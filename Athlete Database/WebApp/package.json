@@ -1,0 +1,20 @@
+{
+  "name": "Athletes_DataBase",
+  "version": "1.0.0",
+  "description": "a datatabse of athletes, sports, focuses, and diets",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Karcz",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "forever": "^0.15.3",
+    "mysql": "^2.8.0"
+  }
+}

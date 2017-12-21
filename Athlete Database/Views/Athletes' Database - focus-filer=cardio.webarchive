@@ -1,0 +1,313 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameOÊ<!DOCTYPE html><html><head>
+	<title>Athletes' Database</title>
+	<link rel="stylesheet" href="css/athleteDBstyle.css" type="text/css">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body data-pinterest-extension-installed="sa1.37.01">
+	<h1>The Athletes' Database</h1>
+<h2>Sports and Diets By Focus</h2>
+<div class="green">
+  <legend>View sports and diets by focus</legend>
+  <form method="GET" action="/dataByFocus" id="viewByFocus">
+    <label for="focusFilter">Focus</label>
+      <select name="focusFilter" id="focusFilter" form="viewByFocus">
+              <option value="5">agility</option>
+              <option value="1">bodybuilding</option>
+              <option value="2">cardio</option>
+              <option value="4">flexibility</option>
+              <option value="9">maintaining</option>
+              <option value="8">mindfulness</option>
+              <option value="10">physical therapy</option>
+              <option value="7">recovery</option>
+              <option value="3">strength</option>
+              <option value="11">vanity</option>
+              <option value="6">weight loss</option>
+      </select>
+      <input type="submit" name="viewByFocus" form="viewByFocus" value="View Sports and Diets">
+      <p><br></p><p>
+      </p><div>
+        <table>
+          <tbody><tr>
+            <th>Sports</th>
+          </tr>
+            <tr>
+              <td>swimming</td>
+            </tr>
+            <tr>
+              <td>cycling</td>
+            </tr>
+            <tr>
+              <td>running</td>
+            </tr>
+            <tr>
+              <td>HIIT</td>
+            </tr>
+            <tr>
+              <td>basketball</td>
+            </tr>
+            <tr>
+              <td>touch football</td>
+            </tr>
+            <tr>
+              <td>rugby</td>
+            </tr>
+            <tr>
+              <td>kayaking</td>
+            </tr>
+            <tr>
+              <td>soccer</td>
+            </tr>
+        </tbody></table>
+      </div>
+      <p><br></p><p>
+      </p><div>
+      <table>
+        <tbody><tr>
+          <th>Diet Name</th><th>Diet Type</th><th>Description</th>
+        </tr>
+          <tr>
+            <td>finish line</td>
+            <td>high carb</td>
+            <td>provides abundant energy for race day</td>
+          </tr>
+      </tbody></table>
+      <p><br></p><p>
+    <!-- <form id="goBackForm"> -->
+    <!-- <button  type="submit" method="GET" action="/goBack" id="backButton" name="backButton" form="goBackForm">Go Back</button> -->
+    </p></div>
+  </form>
+</div>
+
+	<script type="text/javascript" src="/js/athlete_database.js"></script>
+
+
+</body></html>Ytext/htmlUUTF-8_chttp://flip3.engr.oregonstate.edu:18858/dataByFocus?focusFilter=2&viewByFocus=View+Sports+and+DietsP¡Õ_WebResourceResponseO	/* form {
+  width: 450px;
+}*/
+html, body, div, p {padding:0; margin:0;}
+body {font:14px/1.4 Arial, sans-serif; background:#fff;}
+
+/* CSS folded corner effect */
+
+body {
+  background-color: lightblue;
+  position: relative;
+  left: 36px;
+  top: 18px;
+}
+
+table {
+  position: relative;
+  align-self: center;
+  padding:20px;
+}
+
+.green, .greenTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #97C02F; /*lime green*/
+}
+
+.green:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+.aqua, .aquaTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #39CCCC; /*aqua*/
+}
+
+.aqua:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.red, .redTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #FF4136; /*red*/
+}
+
+.red:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.blue, .blueTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #4169E1; /*blue*/
+}
+
+.blue:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.violet {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #EE82EE; /*violet*/
+}
+
+.violet:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.purple {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #663399; /*purple*/
+}
+
+.purple:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.title {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #000000;
+    text-align: center;
+    background: #00FF7F; /*spring green*/
+}
+.title:before {
+    content:" ";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.cent {
+    text-align:center;
+}
+Xtext/cssUutf-8_>http://flip3.engr.oregonstate.edu:18858/css/athleteDBstyle.cssOObplist00ÔghX$versionX$objectsY$archiverT$top † ¯#)*0123KLMNOPQRSTUVWXYZ[\]abU$nullÝ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_>http://flip3.engr.oregonstate.edu:18858/css/athleteDBstyle.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¾„ZCø‘Ñ ÈÓ456@JWNS.keysZNS.objects©789:;<=>?€	€
+€€€€€€€©ABCDEFGHI€€€€€€€€€€TEtag\Content-Type\X-Powered-By]Last-ModifiedTDate]Accept-Ranges^Content-Length]Cache-ControlZConnection_W/"1509-15ae4787dfb"_text/css; charset=UTF-8WExpress_Sun, 19 Mar 2017 02:49:46 GMT_Thu, 23 Mar 2017 19:32:17 GMTUbytesT5385_public, max-age=0Zkeep-aliveÒ+,^__NSMutableDictionary£^`/\NSDictionaryXtext/cssÒ+,cd_NSHTTPURLResponse£ef/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑij_WebResourceResponse€    # - 2 7 X ^ y | € ƒ † ‰   — š    £ ¦ ¨ ª ¬ ® ° ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Þ à!&1:@CLUWY`hs}ƒ…‡‰‹™›Ÿ¡£¥§©«­²¿ÌÚßíü
+,FNnŽ”™­¸½Ó×äíò
+,>AW             k              Y    1 < N d ‚ ‘ ¨v€†ìíïú""&","m                           &À

@@ -1,0 +1,51 @@
+<h1>The Athletes' Database</h1>
+<h2>Sports and Diets By Focus</h2>
+<div class="green">
+  <legend>View sports and diets by focus</legend>
+  <form method="GET" action="/dataByFocus" id="viewByFocus">
+    <label for="focusFilter">Focus</label>
+      <select name="focusFilter" id="focusFilter" form="viewByFocus">
+        {{#if foci}}
+          {{#each foci}}
+              <option value={{this.id}}>{{this.focus_type}}</option>
+          {{/each}}
+        {{/if}}
+      </select>
+      <input type="submit" name="viewByFocus" form="viewByFocus" value="View Sports and Diets"/>
+      <p></br><p>
+      <div>
+        <table>
+          <tr>
+            <th>Sports</th>
+          </tr>
+          {{#if focusFilterSports}}
+            {{#each focusFilterSports}}
+            <tr>
+              <td>{{this.sport_name}}</td>
+            </tr>
+            {{/each}}
+          {{/if}}
+        </table>
+      </div>
+      <p></br><p>
+      <div>
+      <table>
+        <tr>
+          <th>Diet Name</th><th>Diet Type</th><th>Description</th>
+        </tr>
+        {{#if focusFilterDiets}}
+          {{#each focusFilterDiets}}
+          <tr>
+            <td>{{this.diet_name}}</td>
+            <td>{{this.diet_type}}</td>
+            <td>{{this.description}}</td>
+          </tr>
+          {{/each}}
+        {{/if}}
+      </table>
+      <p></br><p>
+    <!-- <form id="goBackForm"> -->
+    <!-- <button  type="submit" method="GET" action="/goBack" id="backButton" name="backButton" form="goBackForm">Go Back</button> -->
+    </div>
+  </form>
+</div>

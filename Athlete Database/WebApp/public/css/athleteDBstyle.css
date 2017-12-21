@@ -1,0 +1,212 @@
+/* form {
+  width: 450px;
+}*/
+html, body, div, p {padding:0; margin:0;}
+body {font:14px/1.4 Arial, sans-serif; background:#fff;}
+
+/* CSS folded corner effect */
+
+body {
+  background-color: lightblue;
+  position: relative;
+  left: 36px;
+  top: 18px;
+}
+
+table {
+  position: relative;
+  align-self: center;
+  padding:20px;
+}
+
+.green, .greenTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #97C02F; /*lime green*/
+}
+
+.green:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+.aqua, .aquaTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #39CCCC; /*aqua*/
+}
+
+.aqua:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.red, .redTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #FF4136; /*red*/
+}
+
+.red:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.blue, .blueTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #4169E1; /*blue*/
+}
+
+.blue:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.violet {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #EE82EE; /*violet*/
+}
+
+.violet:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.purple {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #663399; /*purple*/
+}
+
+.purple:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.title {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #000000;
+    text-align: center;
+    background: #00FF7F; /*spring green*/
+}
+.title:before {
+    content:" ";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.cent {
+    text-align:center;
+}

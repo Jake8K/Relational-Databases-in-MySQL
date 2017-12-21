@@ -1,0 +1,479 @@
+<div class="title">
+  <h1>The Athletes' Database</h1>
+</div>
+</br>
+<h2>The Data</h2>
+<!-- ************ The Athletes Table ************ -->
+<div class="greenTable">
+  <h3>Athletes:</h3>
+  <table>
+    <tr>
+      <th>Athlete ID</th> <th>Name</th> <th>Gender</th> <th>DOB</th> <th>Fitness</th> <th>Focus</th> <th>Diet</th> <th>Diet Type</th> <th>Interests</th> <th>Sports</th>
+    </tr>
+    {{#if athletes}}
+      {{#each athletes}}
+        <tr>
+          <td align="center">{{this.id}}</td>
+          <td>{{this.name}}</td>
+          <td align="center">{{this.sex}}</td>
+          <td>{{this.DOB}}</td>
+          <td align="center">{{this.fitness_level}}</td>
+          <td align="center">{{this.focus_type}}</td>
+          <td align="center">{{this.diet_name}}</td>
+          <td align="center">{{this.diet_type}}</td>
+          <td>{{this.interests}}</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id={{this.id}} name="athID" value={{this.id}} form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+</div>
+<p></br></p>
+<!-- ************ The Sports Table ************ -->
+<div class="redTable">
+  <h3>Sports:</h3>
+  <table>
+    <tr>
+      <th>Sport ID</th> <th>Sport</th>
+    </tr>
+    {{#if sports}}
+      {{#each sports}}
+        <tr>
+          <td align="center">{{this.id}}</td>
+          <td>{{this.sport_name}}</td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+</div>
+<p></br></p>
+<!-- ************ The Focus Table ************ -->
+<div class="blueTable">
+  <h3>Foci:</h3>
+  <table>
+    <tr>
+      <th>Focus ID</th> <th>Focus</th>
+    </tr>
+    {{#if foci}}
+      {{#each foci}}
+        <tr>
+          <td align="center">{{this.id}}</td>
+          <td>{{this.focus_type}}</td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+</div>
+<p></br></p>
+<!-- ************ The Diets Table ************ -->
+<div class="aquaTable">
+  <h3>Diets:</h3>
+  <table>
+    <tr>
+      <th>Diet ID</th> <th>Diet Name</th><th>Diet Type</th><th>Diet-Focus</th><th>Description</th>
+    </tr>
+    {{#if diets}}
+      {{#each diets}}
+        <tr>
+          <td align="center">{{this.id}}</td>
+          <td>{{this.diet_name}}</td>
+          <td>{{this.diet_type}}</td>
+          <td>{{this.dietFocus}}</td>
+          <td>{{this.description}}</td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+</div>
+<p></br></p>
+<!-- ************ View Stuff By Focus ************ -->
+<div class="violet"> <!--#EE82EE -->
+    <h3>View sports and diets by focus</h3>
+    <form method="GET" action="/dataByFocus" id="viewByFocus">
+      <label for="focusFilter">Focus</label>
+        <select name="focusFilter" id="focusFilter" form="viewByFocus">
+          {{#if foci}}
+            {{#each foci}}
+                <option value={{this.id}}>{{this.focus_type}}</option>
+            {{/each}}
+          {{/if}}
+        </select>
+        <input type="submit" name="viewByFocus" form="viewByFocus" value="View Sports and Diets"/>
+        <div>
+        <!-- <table>
+          <tr>
+            <th>Sports</th>
+          </tr>
+          {{#if focusFilterSports}}
+            {{#each focusFilterSports}}
+            <tr>
+              <td>{{this.sport_name}}</td>
+            </tr>
+            {{/each}}
+          {{/if}}
+        </table>
+      </div>
+      <div>
+      <table>
+        <tr>
+          <th>Diet Name</th><th>Diet Type</th><th>Description</th>
+        </tr>
+        {{#if focusFilterDiets}}
+          {{#each focusFilterDiets}}
+          <tr>
+            <td>{{this.diet_name}}</td>
+            <td>{{this.diet_name}}</td>
+            <td>{{this.diet_type}}</td>
+            <td>{{this.description}}</td>
+          </tr>
+          {{/each}}
+        {{/if}}
+      </table> -->
+    </div>
+    </form>
+</div>
+<p></br></p>
+<p></br></p>
+<div>
+  <h2>Update Database</h2>
+</div>
+<!-- ************ Add an Athlete Form ************ -->
+<div>
+  <h3>Athletes</h3>
+</div>
+<div class="green">
+  <form method="GET" action="/insertAth" id="addAthleteForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Add an Athlete</h3>
+      <p>
+        <label for="first_name">First Name </label>
+          <input type="text" name="first_name" id="athleteFname"/>
+        <label for="last_name">Last Name </label>
+          <input type="text" name="last_name" id="athleteLname"/>
+        <label for="dob">Date of Birth (yyyy-mm-dd) </label>
+          <input type="text" name="dob" id="DOB" form="addAthleteForm" />
+      </p>
+      <p>
+        <label for="sex">Gender </label>
+          <select name="sex" id="gender" form="addAthleteForm">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="private">Prefer Not To Disclose</option>
+          </select>
+        <label for="fitness_level">Fitness Level from unfit (1) to fit (10)</label>
+          <input type="number" name="fitness_level" min="0" max="10" value="5" form="addAthleteForm" />
+        <label for="athlete_focus">Focus</label>
+          <select name="athlete_focus" id="athlete_focus" form="addAthleteForm">
+            {{#if foci}}
+              {{#each foci}}
+                  <option value={{this.id}}>{{this.focus_type}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+      </p>
+      <p>
+        <label for="athlete_diet">Diet</label>
+          <select name="athlete_diet" id="athlete_diet" form="addAthleteForm">
+            {{#if diets}}
+              {{#each diets}}
+                  <option value={{this.id}}>name: {{this.diet_name}} | type: {{this.diet_type}} | focus: {{this.dietFocus}} | [{{this.description}}]</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        <!-- <label for="athleteSports">Sports</label>
+          <select name="athleteSports" id="athleteSports" form="addAthleteForm">
+            {{#if sports}}
+              {{#each sports}}
+                  <option value={{this.id}}>{{this.sport_name}}</option>
+              {{/each}}
+            {{/if}}
+          </select> -->
+      </p>
+      <p>
+        <label for="interests">Interests</label></br>
+          <textarea rows="2" cols="36" type="text" name="interests" id="interests" form="addAthleteForm">Description of athletic or physical aspirations, motivations, or desires</textArea>
+      </p>
+      <p><input type="submit" name="add athlete" form="addAthleteForm" id="addAthlete" value="add athlete" onclick="addAthlete()"/></p>
+      <p>Please use the form bellow to add the sports the athlete commonly participates in</p>
+  </form>
+</div>
+<!-- ************ Add To Athelete's Sports ************ -->
+<div class="green">
+  <form method="GET" action="/add_athletes_sports" id="atheletes_sports_form">
+      <h3>Add Sports to Athlete's Profile</h3>
+      <label for="athletesID">Athlete</label>
+        <select name="athletesID" id="athletesID" form="atheletes_sports_form">
+          {{#if athletes}}
+            {{#each athletes}}
+                <option value={{this.id}}>{{this.name}} ({{this.id}})</option>
+            {{/each}}
+          {{/if}}
+        </select>
+      <label for="athleteSports">Sport</label>
+        <select name="athletesSports" id="athletesSports" form="atheletes_sports_form">
+          {{#if sports}}
+            {{#each sports}}
+                <option value={{this.id}}>{{this.sport_name}}</option>
+            {{/each}}
+          {{/if}}
+        </select>
+      <p>
+        <input type="submit" name="athletes_sports_submit" form="atheletes_sports_form" id="athletes_sports_submit" value="Add Sport" />
+      </p>
+  </form>
+</div>
+<!-- ************ Edit an Athlete Form ************ -->
+<div class="green">
+  <form method="GET" action="/updateAth" id="updateAthForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Edit an Athlete</h3>
+      <p>Athlete to Edit (REQUIRED)</p>
+      <label for="athleteID">Athlete</label>
+        <select name="athleteID" id="athleteID" form="updateAthForm">
+          {{#if athletes}}
+            {{#each athletes}}
+                <option value={{this.id}}>{{this.name}} ({{this.id}})</option>
+            {{/each}}
+          {{/if}}
+        </select>
+      <p>Note: You only need to enter data for the field(s) you wish to change, but make sure the pre-populated fields (diet, focus, and sport) have the correct selection before submitting</p>
+      <p>
+        <label for="first_name">First Name </label>
+          <input type="text" name="first_name" id="athleteFname"/>
+        <label for="last_name">Last Name </label>
+          <input type="text" name="last_name" id="athleteLname"/>
+        <label for="dob">Date of Birth (yyyy-mm-dd) </label>
+          <input type="text" name="dob" id="DOB" form="updateAthForm" />
+      </p>
+      <p>
+        <label for="sex">Gender </label>
+          <select name="sex" id="gender" form="updateAthForm">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="private">Prefer Not To Disclose</option>
+          </select>
+        <label for="fitness_level">Fitness Level from unfit (1) to fit (10)</label>
+          <input type="number" name="fitness_level" min="0" max="10" form="updateAthForm" />
+        <label for="athlete_focus">Focus</label>
+          <select name="athlete_focus" id="athlete_focus" form="updateAthForm">
+            {{#if foci}}
+              {{#each foci}}
+                  <option value={{this.id}}>{{this.focus_type}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+      </p>
+      <p>
+        <label for="athlete_diet">Diet</label>
+          <select name="athlete_diet" id="athlete_diet" form="updateAthForm">
+            {{#if diets}}
+              {{#each diets}}
+                <option value={{this.id}}>name: {{this.diet_name}} | type: {{this.diet_type}} | focus: {{this.dietFocus}} | [{{this.description}}]</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        <!--<label for="athleteSports">Sports</label>
+          <select name="athleteSports" id="athleteSports" form="updateAthForm">
+            {{#if sports}}
+              {{#each sports}}
+                  <option value={{this.id}}>{{this.sport_name}}</option>
+              {{/each}}
+            {{/if}}
+          </select> -->
+      </p>
+      <p>
+        <label for="interests">Interests</label></br>
+          <textarea rows="2" cols="36" type="text" name="interests" id="interests" form="updateAthForm"></textArea>
+      </p>
+      <p>
+        <input type="submit" name="update athlete" form="updateAthForm" id="updateAthlete" value="update athlete" />
+      </p>
+  </form>
+</div>
+<!-- ************ Remove an Athlete Form ************ -->
+<div class="green">
+  <form method="GET" action="/deleteAthlete" id="deleteAthForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Delete an Athlete</h3>
+      <p>
+      <label for="athleteID">Athlete to Delete</label>
+        <select name="athleteID" id="athleteID" form="deleteAthForm">
+          {{#if athletes}}
+            {{#each athletes}}
+                <option value={{this.id}}>{{this.name}} ({{this.id}})</option>
+            {{/each}}
+          {{/if}}
+        </select>
+      </p>
+      <p>(WARNING: this is permanent!)</p>
+      <p>
+        <input type="submit" name="delete athlete" form="deleteAthForm" id="deleteAthlete" value="delete athlete" />
+      </p>
+  </form>
+</div>
+<!-- ************ Add a Sport Form ************ -->
+<div>
+  <h3>Sports</h3>
+</div>
+<div class="red">
+  <form method="GET" action='/insertSport' id="sportForm">
+      <h3>Sport</h3>
+      <label for="sport_name">Name</label>
+        <input type="text" name="sport_name" form="sportForm" /><!-- switch to dropDown input-->
+  <!-- <label for="sport_focus">Focus</label>
+        <select multiple name="sport_focus" id="sport_focus" form="sportForm">
+          {{#if foci}}
+            {{#each foci}}
+                <option value={{this.id}}>{{this.focus_type}}</option>
+            {{/each}}
+          {{/if}}
+        </select> -->
+        <!-- Awesome!!! TRY TO ADD FOCUS ASSOCIATION(S) ALONG WITH SPORT to /insertSportFocus -->
+        <p>
+          <input type="submit" name="add sport" form="sportForm" value="add sport" />
+        </p>
+  </form>
+</div>
+<!-- ************ Add a Focus Form ************ -->
+<div>
+  <h3>Foci</h3>
+</div>
+<div class="blue">
+  <form method="GET" action='/insertFocus' id="focusForm">
+      <h3>Focus</h3>
+      <label for="focus_type">Type</label>
+        <input type="text" name="focus_type" form="focusForm" />
+  <!-- <label for="sport_name">Sport(s)</label>
+        <select multiple name="sport_name" id="sport_name" form="focusForm">
+          {{#if sports}}
+            {{#each sports}}
+                <option value={{this.id}}>{{this.sport_name}}</option>
+            {{/each}}
+          {{/if}}
+        </select> -->
+        <!-- OPTIONAL!!! ADD SPORT ASSOCIATION(S) ALONG WITH FOCUS -->
+        <p>
+          <input type="submit" name="add focus" form="focusForm" value="add focus" />
+        </p>
+  </form>
+</div>
+<!-- ************ Add a Sport-Focus Relationship Form ************ -->
+<div>
+  <h3>Sport-Focus Relations</h3>
+</div>
+<div class="purple">
+  <form method="GET" action='/addFocusSport' id="focusSportForm">
+      <h3>Focus & Sport</h3>
+        <label for="sportFocus">Focus</label>
+          <select name="sportFocus" id="sportFocus" form="focusSportForm">
+            {{#if foci}}
+              {{#each foci}}
+                  <option value={{this.id}}>{{this.focus_type}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        <label for="focusSport">Sport</label>
+        <select name="focusSport" id="focusSport" form="focusSportForm">
+          {{#if sports}}
+            {{#each sports}}
+                <option value={{this.id}}>{{this.sport_name}}</option>
+            {{/each}}
+          {{/if}}
+        </select>
+        <p>
+          <input type="submit" name="add focus-sport" form="focusSportForm" value="create focus-sport relation" />
+        </p>
+        <p>Use this form to create a sport and focus relationship. For example, the sport of "running" has foci "cardio" and "weight loss," among others.</p>
+  </form>
+</div>
+<!-- ************ Add a Diet Form ************ -->
+<div>
+  <h3>Diets</h3>
+</div>
+<div class="aqua">
+  <form method="GET" action='/insertDiet' id="addDietForm">
+      <h3>Add a Diet</h3>
+        <label for="diet_name">Name</label>
+          <input type="text" name="diet_name" form="addDietForm"/>
+        <label for="diet_type">Type</label>
+          <input type="text" name="diet_type" form="addDietForm"/>
+        <label for="diet_focus">Focus</label>
+          <select name="diet_focus" id="diet_focus" form="addDietForm">
+            {{#if foci}}
+              {{#each foci}}
+                  <option value={{this.id}}>{{this.focus_type}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        <p>
+        <label for="description">Description</label></br>
+          <textarea rows="2" cols="36" type="text" name="description" id="description" form="addDietForm" >Please Describe This Diet (benefits, strengths, who it's for...)</textArea>
+        </p>
+        <p>
+          <input type="submit" name="add diet" form="addDietForm" value="add diet" />
+        </p>
+  </form>
+</div>
+<!-- ************ Edit a Diet Form ************ -->
+<div class="aqua">
+  <form method="GET" action='/updateDiet' id="editDietForm">
+      <h3>Edit a Diet</h3>
+      <p>
+        <label for="dietID">Diet ID (required)</label>
+          <select name="dietID" id="dietID" form="editDietForm">
+            {{#if diets}}
+              {{#each diets}}
+                  <option value={{this.id}}>{{this.diet_name}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        </p>
+        <label for="diet_name">Name</label>
+          <input type="text" name="diet_name"  form="editDietForm"/>
+        <label for="diet_type">Type</label>
+          <input type="text" name="diet_type"  form="editDietForm"/>
+        <label for="diet_focus">Focus</label>
+          <select name="diet_focus" id="diet_focus" form="editDietForm">
+            {{#if foci}}
+              {{#each foci}}
+                  <option value={{this.id}}>{{this.focus_type}}</option>
+              {{/each}}
+            {{/if}}
+          </select>
+        <p>
+        <label for="description">Description</label></br>
+          <textarea rows="2" cols="36" type="text" name="description" id="description"  form="editDietForm"></textArea>
+        </p>
+        <p>
+          <input type="submit" name="update diet" form="editDietForm" value="update diet" />
+        </p>
+  </form>
+</div>
+
+<!--
+<form method="post">
+  <fieldset>
+    <label for="name">To Do Item: </label>
+    <input type="text" name="name" id="toDoName">
+    <label for="city">City: </label>
+    <input type="text" name="city" id="toDoCity">
+    <label for="minTemp">Minimum acceptable temperature: </label>
+    <input type="text" name="minTemp" id="toDoMinTemp">
+    <input type="submit" name="Add Item" value="Add Item">
+  </fieldset>
+</form>
+{{#if toDo}}
+<ul>
+  {{#each toDo}}
+  <li>
+    <h4>item: {{this.name}}, </br> location: {{this.city}}, </br> minimum acceptable temp: {{this.minTemp}}</h4>
+    <form method="post">
+      <input type="hidden" name="id" value="{{this.id}}">
+      <input type="submit" name="Done" value="Mark as Done">
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{/if}}
+ -->

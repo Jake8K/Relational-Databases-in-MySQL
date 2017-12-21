@@ -1,0 +1,32 @@
+<div class="green">
+  <h3>Athlete information:</h3>
+  <table>
+    <tr>
+      <th>Athlete ID</th> <th>Name</th> <th>Gender</th> <th>DOB</th> <th>Fitness</th> <th>Focus</th> <th>Diet</th> <th>Diet Type</th> <th>Interests</th>
+    {{#if athlete}}
+      {{#each athlete}}
+        <tr>
+          <td align="center">{{this.id}}</td>
+          <td>{{this.name}}</td>
+          <td align="center">{{this.sex}}</td>
+          <td>{{this.DOB}}</td>
+          <td align="center">{{this.fitness_level}}</td>
+          <td align="center">{{this.focus_type}}</td>
+          <td align="center">{{this.diet_name}}</td>
+          <td align="center">{{this.diet_type}}</td>
+          <td>{{this.interests}}</td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+  <table>
+    <tr>
+      <th align="left">Sports: </th>
+      {{#if sports}}
+        {{#each sports}}
+          <td align="right">{{this.sport_name}}</td>
+        {{/each}}
+      {{/if}}
+    </tr>
+  </table>
+</div>

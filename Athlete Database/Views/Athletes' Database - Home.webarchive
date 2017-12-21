@@ -1,0 +1,1044 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceData_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameNameO„3<!DOCTYPE html><html><head>
+	<title>Athletes' Database</title>
+	<link rel="stylesheet" href="css/athleteDBstyle.css" type="text/css">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body data-pinterest-extension-installed="sa1.37.01">
+	<div class="title">
+  <h1>The Athletes' Database</h1>
+</div>
+<br>
+<h2>The Data</h2>
+<!-- ************ The Athletes Table ************ -->
+<div class="greenTable">
+  <h3>Athletes:</h3>
+  <table>
+    <tbody><tr>
+      <th>Athlete ID</th> <th>Name</th> <th>Gender</th> <th>DOB</th> <th>Fitness</th> <th>Focus</th> <th>Diet</th> <th>Diet Type</th> <th>Interests</th> <th>Sports</th>
+    </tr>
+        <tr>
+          <td align="center">1</td>
+          <td>Klein, Jake</td>
+          <td align="center">M</td>
+          <td>1985-11-18</td>
+          <td align="center">7</td>
+          <td align="center">cardio</td>
+          <td align="center">zen</td>
+          <td align="center">balanced</td>
+          <td>Hopefully do an iron man challenge one day</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id="1" name="athID" value="1" form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">2</td>
+          <td>Jaimes, Hillary</td>
+          <td align="center">F</td>
+          <td>1987-10-26</td>
+          <td align="center">8</td>
+          <td align="center">strength</td>
+          <td align="center">Beastly</td>
+          <td align="center">high protein</td>
+          <td>bulking up for rock climbing</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id="2" name="athID" value="2" form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">6</td>
+          <td>Dracula, Count</td>
+          <td align="center">M</td>
+          <td>1666-11-18</td>
+          <td align="center">10</td>
+          <td align="center">agility</td>
+          <td align="center">zen</td>
+          <td align="center">balanced</td>
+          <td>I vant to suck yer bloooood</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id="6" name="athID" value="6" form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">9</td>
+          <td>Kock, John</td>
+          <td align="center">M</td>
+          <td>1988-12-12</td>
+          <td align="center">5</td>
+          <td align="center">physical therapy</td>
+          <td align="center">zen</td>
+          <td align="center">balanced</td>
+          <td>Getting my knee back in order so I can get back out there!</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id="9" name="athID" value="9" form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">10</td>
+          <td>Bro, Mantic</td>
+          <td align="center">M</td>
+          <td>1965-10-10</td>
+          <td align="center">9</td>
+          <td align="center">agility</td>
+          <td align="center">vegan delight</td>
+          <td align="center">balanced â€“ high protein</td>
+          <td>Catching gnarly waves, brah!</td>
+          <td>
+            <form method="GET" action="/mySports" id="viewSportsForm">
+              <button type="submit" id="10" name="athID" value="10" form="viewSportsForm">View Sports</button>
+            </form>
+          </td>
+        </tr>
+  </tbody></table>
+</div>
+<p><br></p>
+<!-- ************ The Sports Table ************ -->
+<div class="redTable">
+  <h3>Sports:</h3>
+  <table>
+    <tbody><tr>
+      <th>Sport ID</th> <th>Sport</th>
+    </tr>
+        <tr>
+          <td align="center">7</td>
+          <td>basketball</td>
+        </tr>
+        <tr>
+          <td align="center">2</td>
+          <td>cycling</td>
+        </tr>
+        <tr>
+          <td align="center">40</td>
+          <td>golf</td>
+        </tr>
+        <tr>
+          <td align="center">5</td>
+          <td>HIIT</td>
+        </tr>
+        <tr>
+          <td align="center">10</td>
+          <td>kayaking</td>
+        </tr>
+        <tr>
+          <td align="center">37</td>
+          <td>Mountain Biking</td>
+        </tr>
+        <tr>
+          <td align="center">4</td>
+          <td>resistance training</td>
+        </tr>
+        <tr>
+          <td align="center">9</td>
+          <td>rugby</td>
+        </tr>
+        <tr>
+          <td align="center">3</td>
+          <td>running</td>
+        </tr>
+        <tr>
+          <td align="center">12</td>
+          <td>ski</td>
+        </tr>
+        <tr>
+          <td align="center">13</td>
+          <td>snowboarding</td>
+        </tr>
+        <tr>
+          <td align="center">11</td>
+          <td>soccer</td>
+        </tr>
+        <tr>
+          <td align="center">36</td>
+          <td>surfing</td>
+        </tr>
+        <tr>
+          <td align="center">1</td>
+          <td>swimming</td>
+        </tr>
+        <tr>
+          <td align="center">8</td>
+          <td>touch football</td>
+        </tr>
+        <tr>
+          <td align="center">38</td>
+          <td>triathlon</td>
+        </tr>
+        <tr>
+          <td align="center">39</td>
+          <td>weight lifting</td>
+        </tr>
+        <tr>
+          <td align="center">6</td>
+          <td>Yoga</td>
+        </tr>
+  </tbody></table>
+</div>
+<p><br></p>
+<!-- ************ The Focus Table ************ -->
+<div class="blueTable">
+  <h3>Foci:</h3>
+  <table>
+    <tbody><tr>
+      <th>Focus ID</th> <th>Focus</th>
+    </tr>
+        <tr>
+          <td align="center">5</td>
+          <td>agility</td>
+        </tr>
+        <tr>
+          <td align="center">1</td>
+          <td>bodybuilding</td>
+        </tr>
+        <tr>
+          <td align="center">2</td>
+          <td>cardio</td>
+        </tr>
+        <tr>
+          <td align="center">4</td>
+          <td>flexibility</td>
+        </tr>
+        <tr>
+          <td align="center">9</td>
+          <td>maintaining</td>
+        </tr>
+        <tr>
+          <td align="center">8</td>
+          <td>mindfulness</td>
+        </tr>
+        <tr>
+          <td align="center">10</td>
+          <td>physical therapy</td>
+        </tr>
+        <tr>
+          <td align="center">7</td>
+          <td>recovery</td>
+        </tr>
+        <tr>
+          <td align="center">3</td>
+          <td>strength</td>
+        </tr>
+        <tr>
+          <td align="center">11</td>
+          <td>vanity</td>
+        </tr>
+        <tr>
+          <td align="center">6</td>
+          <td>weight loss</td>
+        </tr>
+  </tbody></table>
+</div>
+<p><br></p>
+<!-- ************ The Diets Table ************ -->
+<div class="aquaTable">
+  <h3>Diets:</h3>
+  <table>
+    <tbody><tr>
+      <th>Diet ID</th> <th>Diet Name</th><th>Diet Type</th><th>Diet-Focus</th><th>Description</th>
+    </tr>
+        <tr>
+          <td align="center">1</td>
+          <td>SoCal</td>
+          <td>low calorie</td>
+          <td>weight loss</td>
+          <td>not the best option</td>
+        </tr>
+        <tr>
+          <td align="center">2</td>
+          <td>shredded</td>
+          <td>low fat</td>
+          <td>bodybuilding</td>
+          <td>a low fat diet</td>
+        </tr>
+        <tr>
+          <td align="center">3</td>
+          <td>paleo</td>
+          <td>low carb</td>
+          <td>weight loss</td>
+          <td>a high risk high result short term diet</td>
+        </tr>
+        <tr>
+          <td align="center">4</td>
+          <td>zen</td>
+          <td>balanced</td>
+          <td>mindfulness</td>
+          <td>a balanced diet, ideal for maintaininga healthy lifestyle</td>
+        </tr>
+        <tr>
+          <td align="center">5</td>
+          <td>vegan delight</td>
+          <td>balanced â€“ high protein</td>
+          <td>flexibility</td>
+          <td>a high protein plant based diet</td>
+        </tr>
+        <tr>
+          <td align="center">6</td>
+          <td>Beastly</td>
+          <td>high protein</td>
+          <td>strength</td>
+          <td>a high protein diet for building big muscles</td>
+        </tr>
+        <tr>
+          <td align="center">7</td>
+          <td>finish line</td>
+          <td>high carb</td>
+          <td>cardio</td>
+          <td>provides abundant energy for race day</td>
+        </tr>
+        <tr>
+          <td align="center">8</td>
+          <td>fuel up</td>
+          <td>high calorie</td>
+          <td>agility</td>
+          <td>energy for cardio + strength</td>
+        </tr>
+        <tr>
+          <td align="center">9</td>
+          <td>the fad</td>
+          <td>starvation</td>
+          <td>vanity</td>
+          <td>The Kardashian diet...</td>
+        </tr>
+  </tbody></table>
+</div>
+<p><br></p>
+<!-- ************ View Stuff By Focus ************ -->
+<div class="violet"> <!--#EE82EE -->
+    <h3>View sports and diets by focus</h3>
+    <form method="GET" action="/dataByFocus" id="viewByFocus">
+      <label for="focusFilter">Focus</label>
+        <select name="focusFilter" id="focusFilter" form="viewByFocus">
+                <option value="5">agility</option>
+                <option value="1">bodybuilding</option>
+                <option value="2">cardio</option>
+                <option value="4">flexibility</option>
+                <option value="9">maintaining</option>
+                <option value="8">mindfulness</option>
+                <option value="10">physical therapy</option>
+                <option value="7">recovery</option>
+                <option value="3">strength</option>
+                <option value="11">vanity</option>
+                <option value="6">weight loss</option>
+        </select>
+        <input type="submit" name="viewByFocus" form="viewByFocus" value="View Sports and Diets">
+        <div>
+        <!-- <table>
+          <tr>
+            <th>Sports</th>
+          </tr>
+            <tr>
+              <td>running</td>
+            </tr>
+            <tr>
+              <td>HIIT</td>
+            </tr>
+            <tr>
+              <td>basketball</td>
+            </tr>
+            <tr>
+              <td>touch football</td>
+            </tr>
+            <tr>
+              <td>rugby</td>
+            </tr>
+            <tr>
+              <td>soccer</td>
+            </tr>
+        </table>
+      </div>
+      <div>
+      <table>
+        <tr>
+          <th>Diet Name</th><th>Diet Type</th><th>Description</th>
+        </tr>
+          <tr>
+            <td>fuel up</td>
+            <td>fuel up</td>
+            <td>high calorie</td>
+            <td>energy for cardio + strength</td>
+          </tr>
+      </table> -->
+    </div>
+    </form>
+</div>
+<p><br></p>
+<p><br></p>
+<div>
+  <h2>Update Database</h2>
+</div>
+<!-- ************ Add an Athlete Form ************ -->
+<div>
+  <h3>Athletes</h3>
+</div>
+<div class="green">
+  <form method="GET" action="/insertAth" id="addAthleteForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Add an Athlete</h3>
+      <p>
+        <label for="first_name">First Name </label>
+          <input type="text" name="first_name" id="athleteFname">
+        <label for="last_name">Last Name </label>
+          <input type="text" name="last_name" id="athleteLname">
+        <label for="dob">Date of Birth (yyyy-mm-dd) </label>
+          <input type="text" name="dob" id="DOB" form="addAthleteForm">
+      </p>
+      <p>
+        <label for="sex">Gender </label>
+          <select name="sex" id="gender" form="addAthleteForm">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="private">Prefer Not To Disclose</option>
+          </select>
+        <label for="fitness_level">Fitness Level from unfit (1) to fit (10)</label>
+          <input type="number" name="fitness_level" min="0" max="10" value="5" form="addAthleteForm">
+        <label for="athlete_focus">Focus</label>
+          <select name="athlete_focus" id="athlete_focus" form="addAthleteForm">
+                  <option value="5">agility</option>
+                  <option value="1">bodybuilding</option>
+                  <option value="2">cardio</option>
+                  <option value="4">flexibility</option>
+                  <option value="9">maintaining</option>
+                  <option value="8">mindfulness</option>
+                  <option value="10">physical therapy</option>
+                  <option value="7">recovery</option>
+                  <option value="3">strength</option>
+                  <option value="11">vanity</option>
+                  <option value="6">weight loss</option>
+          </select>
+      </p>
+      <p>
+        <label for="athlete_diet">Diet</label>
+          <select name="athlete_diet" id="athlete_diet" form="addAthleteForm">
+                  <option value="1">name: SoCal | type: low calorie | focus: weight loss | [not the best option]</option>
+                  <option value="2">name: shredded | type: low fat | focus: bodybuilding | [a low fat diet]</option>
+                  <option value="3">name: paleo | type: low carb | focus: weight loss | [a high risk high result short term diet]</option>
+                  <option value="4">name: zen | type: balanced | focus: mindfulness | [a balanced diet, ideal for maintaininga healthy lifestyle]</option>
+                  <option value="5">name: vegan delight | type: balanced â€“ high protein | focus: flexibility | [a high protein plant based diet]</option>
+                  <option value="6">name: Beastly | type: high protein | focus: strength | [a high protein diet for building big muscles]</option>
+                  <option value="7">name: finish line | type: high carb | focus: cardio | [provides abundant energy for race day]</option>
+                  <option value="8">name: fuel up | type: high calorie | focus: agility | [energy for cardio + strength]</option>
+                  <option value="9">name: the fad | type: starvation | focus: vanity | [The Kardashian diet...]</option>
+          </select>
+        <!-- <label for="athleteSports">Sports</label>
+          <select name="athleteSports" id="athleteSports" form="addAthleteForm">
+                  <option value=7>basketball</option>
+                  <option value=2>cycling</option>
+                  <option value=40>golf</option>
+                  <option value=5>HIIT</option>
+                  <option value=10>kayaking</option>
+                  <option value=37>Mountain Biking</option>
+                  <option value=4>resistance training</option>
+                  <option value=9>rugby</option>
+                  <option value=3>running</option>
+                  <option value=12>ski</option>
+                  <option value=13>snowboarding</option>
+                  <option value=11>soccer</option>
+                  <option value=36>surfing</option>
+                  <option value=1>swimming</option>
+                  <option value=8>touch football</option>
+                  <option value=38>triathlon</option>
+                  <option value=39>weight lifting</option>
+                  <option value=6>Yoga</option>
+          </select> -->
+      </p>
+      <p>
+        <label for="interests">Interests</label><br>
+          <textarea rows="2" cols="36" type="text" name="interests" id="interests" form="addAthleteForm">Description of athletic or physical aspirations, motivations, or desires</textarea>
+      </p>
+      <p><input type="submit" name="add athlete" form="addAthleteForm" id="addAthlete" value="add athlete" onclick="addAthlete()"></p>
+      <p>Please use the form bellow to add the sports the athlete commonly participates in</p>
+  </form>
+</div>
+<!-- ************ Add To Athelete's Sports ************ -->
+<div class="green">
+  <form method="GET" action="/add_athletes_sports" id="atheletes_sports_form">
+      <h3>Add Sports to Athlete's Profile</h3>
+      <label for="athletesID">Athlete</label>
+        <select name="athletesID" id="athletesID" form="atheletes_sports_form">
+                <option value="1">Klein, Jake (1)</option>
+                <option value="2">Jaimes, Hillary (2)</option>
+                <option value="6">Dracula, Count (6)</option>
+                <option value="9">Kock, John (9)</option>
+                <option value="10">Bro, Mantic (10)</option>
+        </select>
+      <label for="athleteSports">Sport</label>
+        <select name="athletesSports" id="athletesSports" form="atheletes_sports_form">
+                <option value="7">basketball</option>
+                <option value="2">cycling</option>
+                <option value="40">golf</option>
+                <option value="5">HIIT</option>
+                <option value="10">kayaking</option>
+                <option value="37">Mountain Biking</option>
+                <option value="4">resistance training</option>
+                <option value="9">rugby</option>
+                <option value="3">running</option>
+                <option value="12">ski</option>
+                <option value="13">snowboarding</option>
+                <option value="11">soccer</option>
+                <option value="36">surfing</option>
+                <option value="1">swimming</option>
+                <option value="8">touch football</option>
+                <option value="38">triathlon</option>
+                <option value="39">weight lifting</option>
+                <option value="6">Yoga</option>
+        </select>
+      <p>
+        <input type="submit" name="athletes_sports_submit" form="atheletes_sports_form" id="athletes_sports_submit" value="Add Sport">
+      </p>
+  </form>
+</div>
+<!-- ************ Edit an Athlete Form ************ -->
+<div class="green">
+  <form method="GET" action="/updateAth" id="updateAthForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Edit an Athlete</h3>
+      <p>Athlete to Edit (REQUIRED)</p>
+      <label for="athleteID">Athlete</label>
+        <select name="athleteID" id="athleteID" form="updateAthForm">
+                <option value="1">Klein, Jake (1)</option>
+                <option value="2">Jaimes, Hillary (2)</option>
+                <option value="6">Dracula, Count (6)</option>
+                <option value="9">Kock, John (9)</option>
+                <option value="10">Bro, Mantic (10)</option>
+        </select>
+      <p>Note: You only need to enter data for the field(s) you wish to change, but make sure the pre-populated fields (diet, focus, and sport) have the correct selection before submitting</p>
+      <p>
+        <label for="first_name">First Name </label>
+          <input type="text" name="first_name" id="athleteFname">
+        <label for="last_name">Last Name </label>
+          <input type="text" name="last_name" id="athleteLname">
+        <label for="dob">Date of Birth (yyyy-mm-dd) </label>
+          <input type="text" name="dob" id="DOB" form="updateAthForm">
+      </p>
+      <p>
+        <label for="sex">Gender </label>
+          <select name="sex" id="gender" form="updateAthForm">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="private">Prefer Not To Disclose</option>
+          </select>
+        <label for="fitness_level">Fitness Level from unfit (1) to fit (10)</label>
+          <input type="number" name="fitness_level" min="0" max="10" form="updateAthForm">
+        <label for="athlete_focus">Focus</label>
+          <select name="athlete_focus" id="athlete_focus" form="updateAthForm">
+                  <option value="5">agility</option>
+                  <option value="1">bodybuilding</option>
+                  <option value="2">cardio</option>
+                  <option value="4">flexibility</option>
+                  <option value="9">maintaining</option>
+                  <option value="8">mindfulness</option>
+                  <option value="10">physical therapy</option>
+                  <option value="7">recovery</option>
+                  <option value="3">strength</option>
+                  <option value="11">vanity</option>
+                  <option value="6">weight loss</option>
+          </select>
+      </p>
+      <p>
+        <label for="athlete_diet">Diet</label>
+          <select name="athlete_diet" id="athlete_diet" form="updateAthForm">
+                <option value="1">name: SoCal | type: low calorie | focus: weight loss | [not the best option]</option>
+                <option value="2">name: shredded | type: low fat | focus: bodybuilding | [a low fat diet]</option>
+                <option value="3">name: paleo | type: low carb | focus: weight loss | [a high risk high result short term diet]</option>
+                <option value="4">name: zen | type: balanced | focus: mindfulness | [a balanced diet, ideal for maintaininga healthy lifestyle]</option>
+                <option value="5">name: vegan delight | type: balanced â€“ high protein | focus: flexibility | [a high protein plant based diet]</option>
+                <option value="6">name: Beastly | type: high protein | focus: strength | [a high protein diet for building big muscles]</option>
+                <option value="7">name: finish line | type: high carb | focus: cardio | [provides abundant energy for race day]</option>
+                <option value="8">name: fuel up | type: high calorie | focus: agility | [energy for cardio + strength]</option>
+                <option value="9">name: the fad | type: starvation | focus: vanity | [The Kardashian diet...]</option>
+          </select>
+        <!--<label for="athleteSports">Sports</label>
+          <select name="athleteSports" id="athleteSports" form="updateAthForm">
+                  <option value=7>basketball</option>
+                  <option value=2>cycling</option>
+                  <option value=40>golf</option>
+                  <option value=5>HIIT</option>
+                  <option value=10>kayaking</option>
+                  <option value=37>Mountain Biking</option>
+                  <option value=4>resistance training</option>
+                  <option value=9>rugby</option>
+                  <option value=3>running</option>
+                  <option value=12>ski</option>
+                  <option value=13>snowboarding</option>
+                  <option value=11>soccer</option>
+                  <option value=36>surfing</option>
+                  <option value=1>swimming</option>
+                  <option value=8>touch football</option>
+                  <option value=38>triathlon</option>
+                  <option value=39>weight lifting</option>
+                  <option value=6>Yoga</option>
+          </select> -->
+      </p>
+      <p>
+        <label for="interests">Interests</label><br>
+          <textarea rows="2" cols="36" type="text" name="interests" id="interests" form="updateAthForm"></textarea>
+      </p>
+      <p>
+        <input type="submit" name="update athlete" form="updateAthForm" id="updateAthlete" value="update athlete">
+      </p>
+  </form>
+</div>
+<!-- ************ Remove an Athlete Form ************ -->
+<div class="green">
+  <form method="GET" action="/deleteAthlete" id="deleteAthForm">  <!-- action="/insertAth"  and handle it in a function on JS?????????????? -->
+      <h3>Delete an Athlete</h3>
+      <p>
+      <label for="athleteID">Athlete to Delete</label>
+        <select name="athleteID" id="athleteID" form="deleteAthForm">
+                <option value="1">Klein, Jake (1)</option>
+                <option value="2">Jaimes, Hillary (2)</option>
+                <option value="6">Dracula, Count (6)</option>
+                <option value="9">Kock, John (9)</option>
+                <option value="10">Bro, Mantic (10)</option>
+        </select>
+      </p>
+      <p>(WARNING: this is permanent!)</p>
+      <p>
+        <input type="submit" name="delete athlete" form="deleteAthForm" id="deleteAthlete" value="delete athlete">
+      </p>
+  </form>
+</div>
+<!-- ************ Add a Sport Form ************ -->
+<div>
+  <h3>Sports</h3>
+</div>
+<div class="red">
+  <form method="GET" action="/insertSport" id="sportForm">
+      <h3>Sport</h3>
+      <label for="sport_name">Name</label>
+        <input type="text" name="sport_name" form="sportForm"><!-- switch to dropDown input-->
+  <!-- <label for="sport_focus">Focus</label>
+        <select multiple name="sport_focus" id="sport_focus" form="sportForm">
+                <option value=5>agility</option>
+                <option value=1>bodybuilding</option>
+                <option value=2>cardio</option>
+                <option value=4>flexibility</option>
+                <option value=9>maintaining</option>
+                <option value=8>mindfulness</option>
+                <option value=10>physical therapy</option>
+                <option value=7>recovery</option>
+                <option value=3>strength</option>
+                <option value=11>vanity</option>
+                <option value=6>weight loss</option>
+        </select> -->
+        <!-- Awesome!!! TRY TO ADD FOCUS ASSOCIATION(S) ALONG WITH SPORT to /insertSportFocus -->
+        <p>
+          <input type="submit" name="add sport" form="sportForm" value="add sport">
+        </p>
+  </form>
+</div>
+<!-- ************ Add a Focus Form ************ -->
+<div>
+  <h3>Foci</h3>
+</div>
+<div class="blue">
+  <form method="GET" action="/insertFocus" id="focusForm">
+      <h3>Focus</h3>
+      <label for="focus_type">Type</label>
+        <input type="text" name="focus_type" form="focusForm">
+  <!-- <label for="sport_name">Sport(s)</label>
+        <select multiple name="sport_name" id="sport_name" form="focusForm">
+                <option value=7>basketball</option>
+                <option value=2>cycling</option>
+                <option value=40>golf</option>
+                <option value=5>HIIT</option>
+                <option value=10>kayaking</option>
+                <option value=37>Mountain Biking</option>
+                <option value=4>resistance training</option>
+                <option value=9>rugby</option>
+                <option value=3>running</option>
+                <option value=12>ski</option>
+                <option value=13>snowboarding</option>
+                <option value=11>soccer</option>
+                <option value=36>surfing</option>
+                <option value=1>swimming</option>
+                <option value=8>touch football</option>
+                <option value=38>triathlon</option>
+                <option value=39>weight lifting</option>
+                <option value=6>Yoga</option>
+        </select> -->
+        <!-- OPTIONAL!!! ADD SPORT ASSOCIATION(S) ALONG WITH FOCUS -->
+        <p>
+          <input type="submit" name="add focus" form="focusForm" value="add focus">
+        </p>
+  </form>
+</div>
+<!-- ************ Add a Sport-Focus Relationship Form ************ -->
+<div>
+  <h3>Sport-Focus Relations</h3>
+</div>
+<div class="purple">
+  <form method="GET" action="/addFocusSport" id="focusSportForm">
+      <h3>Focus &amp; Sport</h3>
+        <label for="sportFocus">Focus</label>
+          <select name="sportFocus" id="sportFocus" form="focusSportForm">
+                  <option value="5">agility</option>
+                  <option value="1">bodybuilding</option>
+                  <option value="2">cardio</option>
+                  <option value="4">flexibility</option>
+                  <option value="9">maintaining</option>
+                  <option value="8">mindfulness</option>
+                  <option value="10">physical therapy</option>
+                  <option value="7">recovery</option>
+                  <option value="3">strength</option>
+                  <option value="11">vanity</option>
+                  <option value="6">weight loss</option>
+          </select>
+        <label for="focusSport">Sport</label>
+        <select name="focusSport" id="focusSport" form="focusSportForm">
+                <option value="7">basketball</option>
+                <option value="2">cycling</option>
+                <option value="40">golf</option>
+                <option value="5">HIIT</option>
+                <option value="10">kayaking</option>
+                <option value="37">Mountain Biking</option>
+                <option value="4">resistance training</option>
+                <option value="9">rugby</option>
+                <option value="3">running</option>
+                <option value="12">ski</option>
+                <option value="13">snowboarding</option>
+                <option value="11">soccer</option>
+                <option value="36">surfing</option>
+                <option value="1">swimming</option>
+                <option value="8">touch football</option>
+                <option value="38">triathlon</option>
+                <option value="39">weight lifting</option>
+                <option value="6">Yoga</option>
+        </select>
+        <p>
+          <input type="submit" name="add focus-sport" form="focusSportForm" value="create focus-sport relation">
+        </p>
+        <p>Use this form to create a sport and focus relationship. For example, the sport of "running" has foci "cardio" and "weight loss," among others.</p>
+  </form>
+</div>
+<!-- ************ Add a Diet Form ************ -->
+<div>
+  <h3>Diets</h3>
+</div>
+<div class="aqua">
+  <form method="GET" action="/insertDiet" id="addDietForm">
+      <h3>Add a Diet</h3>
+        <label for="diet_name">Name</label>
+          <input type="text" name="diet_name" form="addDietForm">
+        <label for="diet_type">Type</label>
+          <input type="text" name="diet_type" form="addDietForm">
+        <label for="diet_focus">Focus</label>
+          <select name="diet_focus" id="diet_focus" form="addDietForm">
+                  <option value="5">agility</option>
+                  <option value="1">bodybuilding</option>
+                  <option value="2">cardio</option>
+                  <option value="4">flexibility</option>
+                  <option value="9">maintaining</option>
+                  <option value="8">mindfulness</option>
+                  <option value="10">physical therapy</option>
+                  <option value="7">recovery</option>
+                  <option value="3">strength</option>
+                  <option value="11">vanity</option>
+                  <option value="6">weight loss</option>
+          </select>
+        <p>
+        <label for="description">Description</label><br>
+          <textarea rows="2" cols="36" type="text" name="description" id="description" form="addDietForm">Please Describe This Diet (benefits, strengths, who it's for...)</textarea>
+        </p>
+        <p>
+          <input type="submit" name="add diet" form="addDietForm" value="add diet">
+        </p>
+  </form>
+</div>
+<!-- ************ Edit a Diet Form ************ -->
+<div class="aqua">
+  <form method="GET" action="/updateDiet" id="editDietForm">
+      <h3>Edit a Diet</h3>
+      <p>
+        <label for="dietID">Diet ID (required)</label>
+          <select name="dietID" id="dietID" form="editDietForm">
+                  <option value="1">SoCal</option>
+                  <option value="2">shredded</option>
+                  <option value="3">paleo</option>
+                  <option value="4">zen</option>
+                  <option value="5">vegan delight</option>
+                  <option value="6">Beastly</option>
+                  <option value="7">finish line</option>
+                  <option value="8">fuel up</option>
+                  <option value="9">the fad</option>
+          </select>
+        </p>
+        <label for="diet_name">Name</label>
+          <input type="text" name="diet_name" form="editDietForm">
+        <label for="diet_type">Type</label>
+          <input type="text" name="diet_type" form="editDietForm">
+        <label for="diet_focus">Focus</label>
+          <select name="diet_focus" id="diet_focus" form="editDietForm">
+                  <option value="5">agility</option>
+                  <option value="1">bodybuilding</option>
+                  <option value="2">cardio</option>
+                  <option value="4">flexibility</option>
+                  <option value="9">maintaining</option>
+                  <option value="8">mindfulness</option>
+                  <option value="10">physical therapy</option>
+                  <option value="7">recovery</option>
+                  <option value="3">strength</option>
+                  <option value="11">vanity</option>
+                  <option value="6">weight loss</option>
+          </select>
+        <p>
+        <label for="description">Description</label><br>
+          <textarea rows="2" cols="36" type="text" name="description" id="description" form="editDietForm"></textarea>
+        </p>
+        <p>
+          <input type="submit" name="update diet" form="editDietForm" value="update diet">
+        </p>
+  </form>
+</div>
+
+<!--
+<form method="post">
+  <fieldset>
+    <label for="name">To Do Item: </label>
+    <input type="text" name="name" id="toDoName">
+    <label for="city">City: </label>
+    <input type="text" name="city" id="toDoCity">
+    <label for="minTemp">Minimum acceptable temperature: </label>
+    <input type="text" name="minTemp" id="toDoMinTemp">
+    <input type="submit" name="Add Item" value="Add Item">
+  </fieldset>
+</form>
+ -->
+
+	<script type="text/javascript" src="/js/athlete_database.js"></script>
+
+
+</body></html>Ytext/htmlUUTF-8_(http://flip3.engr.oregonstate.edu:18858/P¡Õ_WebResourceResponseO	/* form {
+  width: 450px;
+}*/
+html, body, div, p {padding:0; margin:0;}
+body {font:14px/1.4 Arial, sans-serif; background:#fff;}
+
+/* CSS folded corner effect */
+
+body {
+  background-color: lightblue;
+  position: relative;
+  left: 36px;
+  top: 18px;
+}
+
+table {
+  position: relative;
+  align-self: center;
+  padding:20px;
+}
+
+.green, .greenTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #97C02F; /*lime green*/
+}
+
+.green:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+.aqua, .aquaTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #39CCCC; /*aqua*/
+}
+
+.aqua:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.red, .redTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #FF4136; /*red*/
+}
+
+.red:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.blue, .blueTable {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #4169E1; /*blue*/
+}
+
+.blue:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.violet {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #EE82EE; /*violet*/
+}
+
+.violet:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.purple {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #fff;
+    background: #663399; /*purple*/
+}
+
+.purple:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.title {
+    position:relative;
+    overflow:hidden; /* hides part of the box-shadow */
+    padding:20px;
+    margin:2em 3%;
+    width: 75%;
+    color: #000000;
+    text-align: center;
+    background: #00FF7F; /*spring green*/
+}
+.title:before {
+    content:" ";
+    position:absolute;
+    top:0;
+    right:0;
+    border-width:0 16px 16px 0;
+    border-style:solid;
+    border-color:#658E15 lightblue;/*#fff;*/
+    /* css3 extras */
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+       -moz-box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+            box-shadow:0 1px 1px rgba(0,0,0,0.3),
+                      -1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.cent {
+    text-align:center;
+}
+Xtext/cssUutf-8_>http://flip3.engr.oregonstate.edu:18858/css/athleteDBstyle.cssOObplist00ÔghX$versionX$objectsY$archiverT$top † ¯#)*0123KLMNOPQRSTUVWXYZ[\]abU$nullÝ	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1€	€€€ €€€€Ó$%'(WNS.base[NS.relative€ €€_>http://flip3.engr.oregonstate.edu:18858/css/athleteDBstyle.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#A¾„YV£ÄÒ ÈÓ456@JWNS.keysZNS.objects©789:;<=>?€	€
+€€€€€€€©ABCDEFGHI€€€€€€€€€€TEtag\Content-Type\X-Powered-By]Last-ModifiedTDate]Accept-Ranges^Content-Length]Cache-ControlZConnection_W/"1509-15ae4787dfb"_text/css; charset=UTF-8WExpress_Sun, 19 Mar 2017 02:49:46 GMT_Thu, 23 Mar 2017 19:26:40 GMTUbytesT5385_public, max-age=0Zkeep-aliveÒ+,^__NSMutableDictionary£^`/\NSDictionaryXtext/cssÒ+,cd_NSHTTPURLResponse£ef/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑij_WebResourceResponse€    # - 2 7 X ^ y | € ƒ † ‰   — š    £ ¦ ¨ ª ¬ ® ° ± ³ µ · ¹ » ½ ¿ Æ Î Ú Ü Þ à!&1:@CLUWY`hs}ƒ…‡‰‹™›Ÿ¡£¥§©«­²¿ÌÚßíü
+,FNnŽ”™­¸½Ó×äíò
+,>AW             k              Y    1 < N d ‚ ‘ ¨„ß„é„ï…………(…>šKšTšZš›                           žî
